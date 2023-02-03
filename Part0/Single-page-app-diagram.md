@@ -1,16 +1,9 @@
 ```mermaid
-  sequenceDiagram
+sequenceDiagram
     participant browser
     participant server
 
-    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
-    activate server
-    server-->>browser: text/HTML document
-    deactivate server
-
-    Note left of server: The server reply with a 302 code causing URL redirection at the browser end
-
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa
     activate server
     server-->>browser: text/HTML document
     deactivate server
@@ -20,16 +13,16 @@
     server-->>browser: text/CSS file
     deactivate server
 
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa.js
     activate server
-    server-->>browser: application/Javascript file
+    server-->>browser: application/javascript file
     deactivate server
 
     Note right of browser: The browser starts executing the JavaScript code that fetches the JSON from the server
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     activate server
-    server-->>browser: application/JSON file
+    server-->>browser: application/json File
     deactivate server
 
     Note right of browser: The browser executes the callback function that renders the notes
