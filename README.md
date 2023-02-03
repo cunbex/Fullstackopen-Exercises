@@ -12,3 +12,4 @@ This project is the exercises of the [Full Stack Open 2023](https://fullstackope
   - [0.4: new note](https://github.com/cunbex/Fullstackopen-Exercises/blob/main/Part0/0.4.md)
   - [0.5: Single page app](https://github.com/cunbex/Fullstackopen-Exercises/blob/main/Part0/0.5.md)
   - [0.6: new note in single page app](https://github.com/cunbex/Fullstackopen-Exercises/blob/main/Part0/0.6.md)
+- [Part 1: Introduction to React](#)
